@@ -1,97 +1,253 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+nav{
+  width: 100%;
+  height: 100vh;
+  line-height: 75px;
+  padding: 0px 50px;
+  /* position: fixed; */
+  background-color: rgb(110, 43, 43);
+}
+nav .logo a{
+  font-size: 30px;
+  font-weight: bold;
+  float: left;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+nav ul{
+  float: right;
+}
+nav li{
+  display: inline-block;
+  list-style: none;
+}
+nav li p{
+  font-size: 14px;
+  font-family:Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  padding: 0px 20px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+nav li p:hover{
+  color: wheat;
+  transition-property: all 0.4 ease 0s;
+}
+.nav1{
+  background: url('https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?cs=srgb&dl=pexels-chan-walrus-941861.jpg&fm=jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  /* height: 100%; */
+}
+.div1{
+  /* border: solid; */
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: red;
+  position: relative;
+  top: 22%;
+  font-size: 53px;
+  font-weight: bold;
+  margin-left: 42%;
+}
+.div2{
+  /* border: solid; */
+  color: white;
+  margin-top: 14%;
+  font-size: 70px;
+  font-weight: bold;
+  margin-left: 37%;
+}
+.para{
+  color: rgb(255, 254, 254);
+  /* border: solid; */
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 40%;
+}
+.img1{
+  width: 20%;
+}
+.homeDiv{
+  border: solid;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
+.container {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.image-container,
+.content-container {
+  flex: 1;
+  padding: 20px;
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.image {
+  max-width: 100%;
+  height: auto;
+ 
+}
+h1{
+  align-items: center;
+}
+.content-container{
+  position: relative;
+  top: 19px;
+  font-size: 17px;
   text-align: center;
 }
+.same{
+  margin-top: 15%;
+}
+.btn2{
+  margin-top: 30px;
+  border: none;
+  width: 120px;
+  height: 50px;
+  background-color:black;
+  color: white;
+  border-radius: 50px;
+  font-weight: bold;
+}
+/* .paraHindi{
+  margin-top: 20px;
+   color: rgb(218, 153, 69);
+  color: red;
+} */
+h2{
+  margin-top: 20px;
+  color: red;
+}
+#happy{
+  margin-top: 15px;
+  font-family:sans-serif;
+}
+p , .same{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.services-container{
+  /* border: solid; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: masonry;
+  margin: 1%;
+}
+.service-img{
+  width: 90%;
+  height: 80%;
+  padding: 4%;
+}
+.services-container div{
+  margin: 3%;
+  margin-top: 50px;
+  padding: 2%;
+}
+.same-div{
+  /* border: solid; */
+  margin-top: 20px;
+  /* border: solid; */
+}
+.same-div:hover{
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+img{
+  /* border: solid; */
+  position: relative;
+  margin-left: 20px;
+}
+h4{
+  /* border: solid; */
+  /* width: 35vh; */
+  margin-left: 110px;
+}
+a{
+  color: white;
+  font-family:Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 0px 20px;
+}
+a:hover{
+  color: wheat;
+}
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+  
 }
 
-.card {
-  padding: 2em;
+
+.modal-content {
+  /* background-color: rgb(208, 195, 195); */
+  /* background-color: rgb(18, 17, 17); */
+  /* background-image: url('https://thumbs.dreamstime.com/b/cute-laddo-food-vector-cartoon-illustration-isolated-white-background-248170077.jpg'); */
+  background-image: url('https://thumbs.dreamstime.com/b/laddoo-character-vector-illustration-sweet-food-india-247688594.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: #d2d1d1; */
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
 }
 
-.read-the-docs {
-  color: #888;
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.h2-title{
+  color:black;
+  text-align: center;
+  /* font-family:cursive; */
 }
+.names{
+  color: black;
+  text-align: center;
+}
+.special{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+}
+.laddu{
+  width: 60px;
+  position: relative;
+  right: 90vh;
+  margin-top: 16px;
+}
+/* span{
+   border: solid white;
+} */
+
+

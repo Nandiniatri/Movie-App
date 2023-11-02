@@ -1,0 +1,69 @@
+{"restaurantData":[
+    {
+      "title":"Indian Food",
+      "items":[
+        {"name":"Matar Paneer", "price":"10"},
+        {"name": "Chole", "price": "8"},
+        {"name": "Mix-Veg", "price": "12"},
+        {"name": "Dal Makhani", "price": "9"},
+        {"name": "Rajma", "price": "7"},
+        {"name": "Kadi", "price": "6"}
+      ]
+    },
+    {
+        "title":"South Indian Food",
+        "items":[
+        {"name":"Dosa", "price":"10"},
+        {"name": "Uttam", "price": "8"},
+        {"name": "Poha", "price": "12"},
+        {"name": "Medu Vada", "price": "9"},
+        {"name": "Idli- Sambhar", "price": "7"},
+        {"name": "Pulihora", "price": "6"}
+        ]
+    },
+    {
+        "title":"Chiness Food",
+        "items":[
+        {"name":"Dumpling", "price":"10"},
+        {"name": "Susi", "price": "8"},
+        {"name": "Spring Roll", "price": "12"},
+        {"name": "Chowmein", "price": "9"},
+        {"name": "Fried Rice", "price": "7"},
+        {"name": "Hot Pot", "price": "6"}
+        ]
+    },
+    {
+        "title":"Roti",
+        "items":[
+        {"name":"Thalipeeth", "price":"10"},
+        {"name": "Naan", "price": "8"},
+        {"name": "Raji Roti", "price": "12"},
+        {"name": "Aloo Paratha", "price": "9"},
+        {"name": "Paneer Paratha", "price": "7"},
+        {"name": "Malabar Paratha", "price": "6"}
+        ]
+    },
+    {
+        "title":"Desert",
+        "items":[
+        {"name":"Ras Malai", "price":"10"},
+        {"name": "Galab Jamun", "price": "8"},
+        {"name": "Gajar Halwa", "price": "12"},
+        {"name": "Custard", "price": "9"},
+        {"name": "Cakes", "price": "7"},
+        {"name": "Cup-Cakes", "price": "6"}
+        ]
+    },
+    {
+        "title":"Drinks",
+        "items":[
+        {"name":"Chaii", "price":"10"},
+        {"name": "Noon Chaii", "price": "8"},
+        {"name": "Coffee", "price": "12"},
+        {"name": "Lassi", "price": "9"},
+        {"name": "Chaach", "price": "7"},
+        {"name": "Majito", "price": "6"}
+        ]
+    }
+  ]
+  }
