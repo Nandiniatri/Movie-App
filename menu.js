@@ -1,7 +1,6 @@
-// document.getElementById('menuji').addEventListener('click', () => {
-// });
- 
-class MenuJI {
+import dataService from "./dataServices";
+
+export default class MenuJI {
     constructor(data) {
         this.data = data;
     }
@@ -38,12 +37,12 @@ class MenuJI {
 
 async function fetchData() {
     try {
-        const data = await dataService.getData("data/menu.json");
+        const data = await dataService.getData("/data/menu.json");
         console.log(data);
         const menuCart = new MenuJI(data);
         menuCart.renderData();
     } catch (error) {
-        console.error('Error fetching data:', error);
+        console.log('Error fetching data:', error);
     }
 }
 

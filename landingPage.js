@@ -1,10 +1,10 @@
-class LandingPage{
+
+export default class LandingPage{
   constructor(data){
       this.data = data;
 }
 
   renderData(){
- 
     const tpl = this.data.map((item) =>{
       return `
       <nav class="nav1" id="navId">
@@ -14,7 +14,6 @@ class LandingPage{
       <li><p id="menuji">${item.menu}</p></li>
       <li><a id="about" id="nav-link" href="#aboutId">${item.about}</a></li>
       <li><a href = "#service-Id">${item.services}</a></li>
-      <li><p>${item.contact}</p></li>
       </ul>
       <div class="div1">${item.name} </div>
       <div class="div2">${item.name1}</div>
@@ -62,4 +61,3 @@ const data = [
 
 const website = new LandingPage(data);
 website.renderData();
-

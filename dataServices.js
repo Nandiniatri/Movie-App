@@ -25,3 +25,5 @@ const dataService = (function() {
       getData 
     };
   })();
+
+export default dataService;

@@ -1,9 +1,11 @@
-class ServicesData{
+export default class ServicesData{
     constructor(data){
+        console.log(data)
         this.data = data;
     }
 
 renderServicesData(){
+    console.log(this.renderServicesData);
     const html = this.data.map((items) => {
         return `<div class="services-container" id="service-Id">
         <div class="same-div"><img class="service-img" src =${items.img}>
