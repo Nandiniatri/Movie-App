@@ -255,7 +255,7 @@ a:hover{
   }
   .nav1{
     border: solid red;
-    width: 147%;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
   }
